@@ -74,6 +74,7 @@ body{
     border-radius: 30px;
     font-size: 0.9em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.5s ease-in;
 }
 @media (max-width: 600px) {
     body {
