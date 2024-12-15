@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #8a4fff;
+    color: white;
+    overflow: hidden;
+}
+#title{
+    position: absolute;
+    top: 4em;
+    right: 45%;
+    font-size: 2.5em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.main{
+    background-color: #e5ecf4;
+    margin: 10em auto;
+    width: 500px;
+    height: fit-content;
+    /* border: 2px solid black; */
+    justify-content: center;
+    font-size: 1.5em;
+    padding: 1em;
+    color: black;
+    border-radius: 40px;
+    transition: 0.5s ease-in;
+    box-shadow: 0 0 15px #672cdd;
+}
+
+.upper{
+    /* border: 2px solid white; */
+    display: flex;
+    padding: 0.5em;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+}
+
+#go{
+    margin-left: 2em;
+    height: 100%;
+    padding: 0.3em 0.7em;
+    font-size: 1em;
+    border: none;
+    border-radius: 25px;
+    background-color:#8a4fff ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-content: center;
+    align-self: center;
+    transition: 0.2s ease-in;
+    color: white;
+}
+#go:hover{
+    cursor: pointer;
+    transform: scale(0.95);
+}
+.search input{
+    font-size: 1em;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 0.3em 0.7em;
+    border-radius: 30px;
+    border: 2px solid black;
+    align-items: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.lower{
+    /* border: 2px solid black; */
+    padding: 0.5em;
+    border-radius: 30px;
+    font-size: 0.9em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+@media (max-width: 600px) {
+    body {
+        overflow: auto;
+        transform: scale(0.9);
+        justify-items: center;
+    }
+    .main {
+        width: 90%;
+        margin: 5em 0.5em;
+        padding: 1em;
+    }
+    #title {
+        top: 2em;
+        right: 10%;
+        font-size: 2em;
+    }
+    .upper {
+        flex-direction: column;
+        padding: 1em;
+        justify-content: center;
+    }
+    #go {
+        margin-left: 0;
+        margin-top: 1em;
+        width: 100%;
+    }
+    .search input {
+        width: 90%;
+    }
+    .lower {
+        font-size: 0.8em;
+    }
+}
